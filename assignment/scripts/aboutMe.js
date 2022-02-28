@@ -106,3 +106,9 @@ console.log(adventurousOrNot(true));
 console.log(adventurousOrNot(false));
 
 console.log(adventurousOrNot(null));
+
+// Note to self: The MDN notation is a fantastic resource for switch statements and ternary operators.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+/* Also, since we're working with OPERATORS within the conditionals, here's a relevant piece of media ;) : https://www.youtube.com/watch?v=3RA4MykPm4s */
