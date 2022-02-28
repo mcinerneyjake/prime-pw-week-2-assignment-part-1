@@ -9,7 +9,7 @@ const fullName = firstName + " " + lastName;
 // 4 - Console log the value of `fullName`
 console.log(fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 91;
+let luckyNumber = 2;
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
@@ -57,10 +57,20 @@ if (pets < allowedPets) {
 
 // 16 - Make a variable called `mostPets` and a conditional that
 // correctly checks the `pets` and `friendsPets` variables, and
-// assigns the highest value to `mostPets`. There's several possibilities --
+// assigns the highest value to `mostPets`. There are several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets + friendsPets;
+let mostPets;
+
+if (pets > friendsPets) {
+  mostPets = "mostPets = " + pets;
+} else if (pets === friendsPets) {
+  mostPets = false;
+} else if (pets < friendsPets) {
+  mostPets = "mostPets = " + friendsPets;
+}
+
+console.log(mostPets);
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
