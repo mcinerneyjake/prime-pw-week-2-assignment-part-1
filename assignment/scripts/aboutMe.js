@@ -63,12 +63,11 @@ if (pets < allowedPets) {
 let mostPets;
 
 if (pets > friendsPets) {
-  mostPets = "mostPets = is the variable of pets with a value of " + pets;
+  mostPets = pets;
 } else if (pets === friendsPets) {
   mostPets = false;
 } else if (pets < friendsPets) {
-  mostPets =
-    "mostPets = is the variable of friendsPets with a value of " + friendsPets;
+  mostPets = friendsPets;
 }
 
 console.log(mostPets);
@@ -79,7 +78,7 @@ console.log(mostPets);
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-luckyNumber = 2;
+luckyNumber = 7;
 
 switch (luckyNumber) {
   case 1:
@@ -98,3 +97,12 @@ switch (luckyNumber) {
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
+function adventurousOrNot(adventurous) {
+  return adventurous ? "Adventures are great!" : "How about we stay home?";
+}
+
+console.log(adventurousOrNot(true));
+
+console.log(adventurousOrNot(false));
+
+console.log(adventurousOrNot(null));
