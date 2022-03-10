@@ -70,6 +70,13 @@ if (pets > friendsPets) {
   mostPets = friendsPets;
 }
 
+// Class example:
+// if (pets >= friendsPets) {
+//   mostPets = pets;
+// } else {
+//   mostPets = friendsPets;
+// }
+
 console.log('mostPets: expect value 4 ==>', mostPets);
 
 // 17 - Write a *switch* statement that logs:
